@@ -13,6 +13,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "dev:service-a": "tsx watch src/services/service-a/server.ts",
+    "start:service-a": "node dist/src/services/service-a/server.js"
   }
 }
