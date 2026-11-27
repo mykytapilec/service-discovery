@@ -1,0 +1,17 @@
+import { buildApp } from './app.js';
+
+const app = buildApp();
+
+const start = async () => {
+  try {
+    const port = Number(process.env.PORT ?? 3101);
+    const host = process.env.HOST ?? '0.0.0.0';
+
+    await app.listen({ port, host });
+  } catch (error) {
+    app.log.error(error);
+    process.exit(1);
+  }
+};
+
+await start();

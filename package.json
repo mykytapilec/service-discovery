@@ -1,0 +1,18 @@
+{
+  "name": "service-discovery",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A service discovery system built with Node.js, TypeScript, Fastify, and Consul.",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  }
+}
